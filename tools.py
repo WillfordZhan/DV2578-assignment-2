@@ -12,8 +12,8 @@ def generate_measure_table(data, row_index, column_name, column_size):
     df = pd.DataFrame(data, index=row_index)
     
     # add division for mean and std
-    df.loc['---'] = ['--------','--------','--------']
-    df.loc['avg'] = mean
+    df.loc['--------'] = ['--------','--------','--------']
+    df.loc['avg     '] = mean
     df.loc['std'] = std
     
     # add column name
